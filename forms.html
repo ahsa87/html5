@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نماذج وجداول</title>
+</head>
+<body>
+    <h1>نماذج وجداول</h1>
+
+    <h2>نموذج تسجيل</h2>
+    <form>
+        <label>الاسم:</label>
+        <br>
+        <input type="text" name="name">
+        <br><br>
+
+        <label>البريد الإلكتروني:</label>
+        <br>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>الجنس:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="ذكر">
+        <label for="male">ذكر</label>
+        <input type="radio" id="female" name="gender" value="أنثى">
+        <label for="female">أنثى</label>
+        <br><br>
+
+        <label>الدولة:</label>
+        <br>
+        <select name="country">
+            <option value="" selected>اختر دولة</option>
+            <option value="السعودية">السعودية</option>
+            <option value="الإمارات">الإمارات</option>
+            <option value="مصر">مصر</option>
+        </select>
+        <br><br>
+
+        <label>رسالة:</label>
+        <br>
+        <textarea name="message" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <button type="submit">إرسال</button>
+        <button type="reset">إعادة تعيين</button>
+    </form>
+
+    <h2>جدول بيانات</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>الاسم</th>
+                <th>العمر</th>
+                <th>المدينة</th>
+                <th>التخصص</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>خالد</td>
+                <td>30</td>
+                <td>الرياض</td>
+                <td rowspan="2">برمجة</td>
+            </tr>
+            <tr>
+                <td>محمد</td>
+                <td>25</td>
+                <td>أبها</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
